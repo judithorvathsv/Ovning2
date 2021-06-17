@@ -16,14 +16,13 @@ namespace Ovning2
 
 
 
-
         private static void Menu()
         {
             string age = " ";
             string numberInTheGroup = "";
-            int intAge;
+            int intAge;            
             int totalCost = 0;
-            int fulltotal = 0;
+        
 
             do
             {
@@ -70,18 +69,15 @@ namespace Ovning2
 
                                         if (intAge < 20)
                                         {
-                                            Console.WriteLine("Youth Price = 80 kr"); 
-                                        totalCost = 80;
+                                            Console.WriteLine("Youth Price = 80 kr");                                        
                                         }
                                         else if (intAge > 64)
                                         {
-                                            Console.WriteLine("Senior Price = 90 kr"); 
-                                        totalCost = 90;
+                                            Console.WriteLine("Senior Price = 90 kr");                                        
                                     }
                                         else
                                         {
-                                            Console.WriteLine("Standardprice = 120 kr"); 
-                                        totalCost = 120;
+                                            Console.WriteLine("Standardprice = 120 kr");                                        
                                     }
                                        
                                       }
@@ -115,8 +111,7 @@ namespace Ovning2
                                     Console.WriteLine("Register the group members one by one.");
 
                                     int count = 0;
-                                    int cost = 0;
-                                 //   int totalCost = 0;
+                                    int cost = 0;                            
                                     bool ThisIsAnIntAge = false;
 
 
@@ -167,7 +162,7 @@ namespace Ovning2
 
                                     Console.WriteLine("*****************************");
                                     Console.WriteLine($"{count} people are in the group");
-                                    Console.WriteLine($"Total cost: {totalCost} kr.\n");
+                                    Console.WriteLine($"Total cost for the group = {totalCost} kr.\n");
                                 } //end of the: "if the input is a number for the group:" part
 
 
@@ -216,14 +211,16 @@ namespace Ovning2
                     default:
                         Console.WriteLine("You should write a number: 0 to quit, 1 to checking, 2 to loop a text or 3 to divide a text.");
                         break;
-                }
-                
-                //if you register a person alone and a group also and they want to pay together:
-                fulltotal += totalCost;
-                Console.WriteLine($"Full total: {totalCost} kr");
+                }                
+              
             }
             while (true);
 
+        }
+
+        private static void Checking() {
+        
+        
         }
     }
 
